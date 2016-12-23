@@ -1,0 +1,38 @@
+<h1>Mi primer ejercicio de Sinatra!</h1>
+<p>* * * aprendiendo como funciona el código * * *</p>
+<h4>by Alux</h4>
+
+<form action="/cool_url" method="get">
+  First name:
+  <input type="text" name="firstname" value=" " size='15'>
+  <br>
+  <input type="radio" name="nationality" value="mexicano (a)" checked> mexicano
+  <input type="radio" name="nationality" value="extranjero (a)"> extranjero<br>
+  <br> 
+  <input type="submit" value="Submit" onclick="alert('ENTRANDO A: GET')">
+</form>
+  <br>
+
+  
+<form action="/cool_url" method="post">
+  Age:
+    <input type="text" name="age" value=" " size='2'>
+    <br>
+  Estado civil:
+    <select name="estado_civil">
+    <option value="soltero">soltero</option>
+    <option value="casado">casado</option>
+    <option value="unión libre">unión libre</option>
+    <option value="otro">otro</option>
+    </select>
+    <br><br>
+  Profesión:
+    <input type="text" name="post[profesión]">
+  Colegio:
+    <input type="text" name="post[colegio]">
+    <br><br>
+  Detalles:
+    <textarea name="post[detalles]"></textarea>
+    <br><br>
+    <input type="submit" value="Submit" onclick="alert('ENTRANDO A: POST')">
+</form>
